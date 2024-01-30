@@ -1,9 +1,9 @@
-import { useState } from "react";
+import React from "react";
 
 const MyHOC = (Component, name) => {
-  return (
+  return (props) => (
     <div className="wrapper">
-      <Component {...name} />
+      <Component {...props} name={name} />
     </div>
   );
 };
