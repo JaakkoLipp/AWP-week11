@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const MyHoc = (Component, name) => {
+const MyHOC = (Component, name) => {
   return (
     <div className="wrapper">
       <Component {...name} />
@@ -8,4 +8,4 @@ const MyHoc = (Component, name) => {
   );
 };
 
-export default MyHoc;
+export default MyHOC;
